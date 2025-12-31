@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="blueGrad" x1="220" y1="220" x2="860" y2="860" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3bb5e6"/>
+      <stop offset="0.55" stop-color="#168aad"/>
+      <stop offset="1" stop-color="#0f6f8c"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Outer bubble ring with inner cutout -->
+  <path fill="url(#blueGrad)" fill-rule="evenodd" d="
+    M 256 560
+    C 256 420 365 320 512 320
+    C 659 320 768 420 768 560
+    C 768 700 659 800 512 800
+    C 492 800 472 798 452 794
+    C 496 856 584 908 660 922
+    C 690 928 708 897 685 876
+    C 646 841 610 804 590 780
+    C 716 744 800 662 800 560
+    C 800 402 675 288 512 288
+    C 349 288 224 402 224 560
+    C 224 662 308 744 434 780
+    C 414 804 378 841 339 876
+    C 316 897 334 928 364 922
+    C 440 908 528 856 572 794
+    C 552 798 532 800 512 800
+    C 365 800 256 700 256 560
+    Z
+
+    M 320 560
+    C 320 462 399 392 512 392
+    C 625 392 704 462 704 560
+    C 704 658 625 728 512 728
+    C 399 728 320 658 320 560
+    Z
+  "/>
+
+  <!-- Side ear bumps -->
+  <path fill="url(#blueGrad)" d="
+    M 206 596
+    C 176 560 176 508 206 472
+    C 232 442 272 432 304 446
+    C 284 506 284 614 304 674
+    C 272 688 232 678 206 648
+    C 196 636 196 608 206 596
+    Z
+  "/>
+
+  <path fill="url(#blueGrad)" d="
+    M 818 596
+    C 848 560 848 508 818 472
+    C 792 442 752 432 720 446
+    C 740 506 740 614 720 674
+    C 752 688 792 678 818 648
+    C 828 636 828 608 818 596
+    Z
+  "/>
+
+  <!-- Antenna stem and head -->
+  <rect x="492" y="226" width="50" height="50" rx="18" fill="url(#blueGrad)"/>
+  <circle cx="512" cy="210" r="56" fill="url(#blueGrad)"/>
+
+  <!-- Signal waves -->
+  <path d="M 246 190 C 206 232 206 292 246 334"
+        fill="none" stroke="url(#blueGrad)" stroke-width="44" stroke-linecap="round"/>
+  <path d="M 326 220 C 304 246 304 278 326 304"
+        fill="none" stroke="url(#blueGrad)" stroke-width="44" stroke-linecap="round"/>
+
+  <path d="M 778 190 C 818 232 818 292 778 334"
+        fill="none" stroke="url(#blueGrad)" stroke-width="44" stroke-linecap="round"/>
+  <path d="M 698 220 C 720 246 720 278 698 304"
+        fill="none" stroke="url(#blueGrad)" stroke-width="44" stroke-linecap="round"/>
+
+  <!-- Eyes -->
+  <circle cx="408" cy="560" r="56" fill="url(#blueGrad)"/>
+  <circle cx="616" cy="560" r="56" fill="url(#blueGrad)"/>
+
+  <!-- Smile -->
+  <path d="M 452 646 C 492 690 532 690 572 646"
+        fill="none" stroke="url(#blueGrad)" stroke-width="56" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

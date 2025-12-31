@@ -1,0 +1,46 @@
+.source-attribution {
+  max-width: 70%;
+  margin-top: 8px;
+  margin-left: 44px;
+}
+
+.sources-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #666;
+  margin: 0 0 6px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.sources-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.source-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  background: #f9f9f9;
+  border-left: 3px solid #0a7e4f;
+  border-radius: 4px;
+  font-size: 13px;
+  color: #555;
+}
+
+.source-icon {
+  font-size: 12px;
+}
+
+.source-text {
+  word-break: break-word;
+}
+
+@media (max-width: 768px) {
+  .source-attribution {
+    max-width: 85%;
+  }
+}

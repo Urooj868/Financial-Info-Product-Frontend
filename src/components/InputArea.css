@@ -1,0 +1,70 @@
+.input-area {
+  display: flex;
+  gap: 10px;
+  padding: 16px;
+  border-top: 1px solid #e5e5e5;
+  background: white;
+}
+
+textarea {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 15px;
+  resize: vertical;
+  max-height: 120px;
+  min-height: 44px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+textarea:focus {
+  border-color: #168aad;
+  box-shadow: 0 0 0 3px rgba(10, 126, 79, 0.1);
+}
+
+textarea:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+button {
+  padding: 12px 24px;
+  background: #168aad;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+  height: fit-content;
+  align-self: flex-end;
+  white-space: nowrap;
+}
+
+button:hover:not(:disabled) {
+  background: #168aad;
+  transform: translateY(-1px);
+}
+
+button:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+  .input-area {
+    flex-direction: column;
+  }
+
+  button {
+    align-self: flex-end;
+  }
+}
